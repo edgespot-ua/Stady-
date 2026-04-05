@@ -1,8 +1,5 @@
-
-.text_d{
-  text-decoration: line-through;
-    cursor: pointer;
+.menu-item {
+  text-align: center;
+  text-transform:lowercase;
+  text-decoration:overline;
 }
-
-
-
