@@ -1,5 +1,166 @@
-.menu-item {
-  text-align: center;
-  text-transform:lowercase;
-  text-decoration:overline;
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap');
+
+html, body{
+  font-family: "Google Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
+.werchne_ogolochenna {
+  background-color: rgb(245, 245, 247);
+  text-align: center;
+  line-height: 11px;
+ 
+}
+
+.werchne_ogolochenna_text {
+  font-size: 14.5px;
+  padding-top: 22px;
+  padding-bottom: 0;
+  font-weight: lighter;
+}
+
+.text_blue{
+    font-size: 14.5px;
+    padding-top: 0;
+    padding-bottom: 22px;
+    color: rgb(0, 102, 204);
+    text-decoration: none ;
+   font-weight: lighter;
+}
+
+.link_a{
+text-decoration: none;
+color: rgb(0, 102, 204);
+}
+
+.text_blue:hover{ 
+  cursor: pointer;
+   text-decoration:underline;
+}
+
+
+
+
+
+
+.iphone_information { 
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    line-height: 20px;
+}
+
+.iphone_information h1{
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.iphone_information p{
+  font-size: 18px;
+}
+
+.second_inf {
+  padding-top: 0px;
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+
+.second_inf p{
+  font-size: 14px;
+}
+
+.img_star {
+  width: 16px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.weitere_Infos{
+color: rgb(0, 102, 204);
+}
+
+.weitere_Infos:hover{
+  cursor: pointer;
+  text-decoration:underline;
+}
+
+.a_ag{
+
+  width: 35px;
+}
+
+
+.slider {
+  
+  position:relative;
+  width: 1200px;
+  height: 840px;
+  margin: 0;
+  margin-top: 79px;
+  margin-bottom: 68px;
+  overflow: hidden;
+  border-radius: 20px;
+  background: #ededf0;
+}
+
+.slides {
+  display: flex;
+  height: 100%;
+  transition: transform 0.4s ease;
+}
+
+.slides img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 48px;
+  border: none;
+  border-radius: 50%;
+  background: rgba(180, 180, 180, 0.45);
+  cursor: pointer;
+  font-size: 24px;
+}
+
+.left {
+  left: 20px;
+}
+
+.right {
+  right: 20px;
+}
+
+.dots {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #999;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #222;
+}
+
+

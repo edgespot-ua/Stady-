@@ -13,11 +13,80 @@
     </header>
 
      <main>
-    <p class="menu-item "> CCS NOW </p>
+            <div class="werchne_ogolochenna">
+                 <p class="werchne_ogolochenna_text">Bezahle dein neues iPhone in 24 Raten. Fußnote ② Nach 12 Raten kannst du ohne weitere Kosten ein Upgrade in Anspruch nehmen. Fußnote ◊ 0 Euro Anzahlung.</p>
+                 <p class="text_blue"><a href="" class="link_a">Weitere Infos ></a></p> 
+           
+            </div>
+
+           <div class="iphone_information">
+              <h1>iPhone 17 Pro kaufen</h1>
+              <p>Ab 1.299 € oder 54,12 €/Rate pro Ratebei 24 RatenRaten mit 0 % eff. Zins p.a.eff. Zins p.a. Fußnote ②</p>
+               <div class="second_inf">
+                    <img class="img_star" src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-selector-icon-apple-intelligence-202409?wid=34&hei=42&fmt=p-jpg&qlt=95&.v=QWZuaThLSTdGTzJUTDdmN2FYMDZUZ0VhQ2RFZ29wT2dyWFFGUWpaYm1PRVNJYmh2Rmh1d3d3Uk9aRnRrbHd2Y2dqL0VmNk9yeXdtbjlQTHVpTy9SZ3lrT3VSbnZSMWpmMWVuSlI3UlowWE9nN3VCbWp3Ujd4dnVUK1hBV2dzZTI" alt="">
+                    <p class="p_2">Entwickelt für Apple Intelligence </p>
+                    <p class="weitere_Infos">Weitere Infos> <br> </p> 
+               </div>
+
+               <img class="a_ag" src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/a3523-energy-rating?wid=64&hei=34&fmt=png-alpha&.v=amNyM2pmTXBEc2J6SW12NHcxSkZ1SndLMk5lQzQwVExKL1NqZEI1T000Q3JaL2ROTnRZcUdteU9LdWJLTTdWTzJrazU2RWJvbGdrUmxGbEhPVTBkY241cU1XNzliRmYrYjhjMnhmd2RlR2M" alt="">
+
+               <div class="slider">
+                     <div class="slides" id="slides">
+                     <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-finish-select-202509-6-3inch-silver?wid=5120&hei=2880&fmt=webp&qlt=90&.v=NUNzdzNKR0FJbmhKWm5YamRHb05tUzkyK3hWak1ybHhtWDkwUXVINFc0RzRIN3Q2Z245Z1F3L1paWlRjZnl6YTF1TmpsTkNoRVRMR1N6UXlVZFBaU0NYR1ZZZnEyMVlVQUliTThGMjNyaFJFRjhVelZBVy8wUHZRSVFLRUJEWEdMR1dOZHMwa2VjYTFxU2tiQm1KKzJB&traceId=1" alt="">
+                     <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-finish-select-202509-6-3inch-silver_AV1?wid=5120&hei=2880&fmt=webp&qlt=90&.v=NUNzdzNKR0FJbmhKWm5YamRHb05tUzkyK3hWak1ybHhtWDkwUXVINFc0RzRIN3Q2Z245Z1F3L1paWlRjZnl6YTl5ZHpib0Q1bndVeTlmTjFVN1kzQmZQWFVaUmg1QWFsTVJFWjd1RElva2hnM0hWZ2pCcFpSZTVSV1k3SjhURDQvWW5ST3htdEI0Z2VILzFvK0hnUXF3&traceId=1" alt="">
+                     <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-17-pro-finish-select-202509-6-3inch-silver_AV3?wid=5120&hei=2880&fmt=webp&qlt=90&.v=NUNzdzNKR0FJbmhKWm5YamRHb05tUzkyK3hWak1ybHhtWDkwUXVINFc0RzRIN3Q2Z245Z1F3L1paWlRjZnl6YWdrZ1hLRVJweE1Ld0hrelZYQUxRVWZQWFVaUmg1QWFsTVJFWjd1RElva2hnM0hWZ2pCcFpSZTVSV1k3SjhURDR0ZzczVEVmRExZK1RrQUI4Tm9sNDRR&traceId=1" alt="">
+                    </div>
+
+                  <button class="arrow left" id="prev">&#10094;</button>
+                  <button class="arrow right" id="next">&#10095;</button>
+
+                  <div class="dots">
+                     <span class="dot active" data-slide="0"></span>
+                     <span class="dot" data-slide="1"></span>
+                     <span class="dot" data-slide="2"></span>
+                  </div>
+                </div>
+              
+            </div>
+
+            
      </main>
 
      <footer>
         
      </footer>
 </body>
+
+<script>
+  const slides = document.getElementById("slides");
+  const dots = document.querySelectorAll(".dot");
+  const next = document.getElementById("next");
+  const prev = document.getElementById("prev");
+
+  let currentSlide = 0;
+  const totalSlides = 3;
+
+  function showSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    dots.forEach(dot => dot.classList.remove("active"));
+    dots[index].classList.add("active");
+  }
+
+  next.addEventListener("click", () => {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  });
+
+  prev.addEventListener("click", () => {
+    currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+    showSlide(currentSlide);
+  });
+
+  dots.forEach(dot => {
+    dot.addEventListener("click", () => {
+      currentSlide = Number(dot.dataset.slide);
+      showSlide(currentSlide);
+    });
+  });
+</script>
 </html>
